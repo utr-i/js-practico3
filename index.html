@@ -8,20 +8,21 @@
 </head>
 
 <body>
-    
-    <form id="formulario" class="conteiner">
+    <main>
+        <form id="formulario" class="conteiner">
+            <input id="usuario" type="text" placeholder="Ingrese usuario">
+            <p id="errorUsuario"></p>
+            <input id="edad" type="number" placeholder="Ingrese su edad">
+            <p id="errorEdad"></p>
+            <input id="correo" type="email" placeholder="Ingrese Email">
+            <p id="errorCorreo"></p>
+            <input id="password" type="password" placeholder="Ingrese su contrasenia">
+            <p id="errorPassword"></p>
+            <button type="submit">Enviar formulario</button>
+            <p id="resultado"></p>
+        </form>
+    </main>
 
-        <input id="usuario" type="text" placeholder="Ingrese usuario">
-        
-        <input id="edad" type="number" placeholder="Ingrese su edad">
-        
-        <input id="correo" type="email" placeholder="Ingrese Email">
-        
-        <input id="password" type="password" placeholder="Ingrese su contrasenia">
-
-        <button type="submit">Enviar formulario</button>
-    </form>
-
-    <script src="js/form.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
