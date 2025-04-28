@@ -4,7 +4,7 @@ formulario.addEventListener('submit', (e) => {
     e.preventDefault()
 
     const usuario = document.getElementById('usuario').value
-    const edad = (document.getElementById('edad').value)
+    const edad = document.getElementById('edad').value
     const correo = document.getElementById('correo').value
     const password = document.getElementById('password').value
 
@@ -20,7 +20,7 @@ formulario.addEventListener('submit', (e) => {
     errorPassword.innerText = '';
 
     if (usuario === '') {
-        errorUsuario.innerText = 'El nombre de usuario es requerido'
+        errorUsuario.innerText = 'El nombre es requerido'
         errorUsuario.style.color = 'red'
     } else if (edad === '') {
         errorEdad.innerText = 'Debe ingresar un número válido'
